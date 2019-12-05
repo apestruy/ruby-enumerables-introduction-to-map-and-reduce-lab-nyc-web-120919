@@ -41,7 +41,7 @@ end
 
 def reduce_to_total(source_array, starting_point)
   index = 0 
-  total = starting_point 
+  total = 0 
   while index < source_array.length do
     total += source_array[index]
     index += 1 
@@ -61,5 +61,11 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-
+index = 0 
+while index < source_array.length do
+  if source_array[index] == true
+    return true
+  end 
+  index += 1 
+  
 end 
